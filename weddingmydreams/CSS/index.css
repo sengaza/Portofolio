@@ -1,0 +1,328 @@
+div,ul,li,a{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+div{
+	height: auto;
+}
+body{
+	font-size: 12px;
+	margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+[class*="col-"]{
+	width : 100%;
+}
+
+
+/*-----------CONTAINER------------*/
+#container{
+	display: flex;
+	flex-flow:row wrap;
+	align-items: stretch;
+	height: auto;
+	text-align: center;
+	color: black;
+
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/*-----------HEADER------------*/
+#header {
+	text-align: left;
+	margin: 0px 20px 20px 20px;
+}
+#header a{
+	background-color: white;
+	font-size: 50px;
+	color: black;
+	font-family: chaparral pro light;
+	font-style: italic bold;
+	position: relative;
+}
+
+
+/*-----------NAVBAR------------*/
+#tmenu {
+	background-color: grey;
+	list-style: none;
+	z-index: 1; 
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+#tnavbar{
+	margin: 0px;
+	padding: 0px;
+	flex-flow: column wrap;
+	height: 40px;
+    list-style: none;
+}
+#tnavbar li{
+	line-height: 40px;
+    width: 100%;
+    text-decoration: none;
+
+}
+#tnavbar li a{
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+}
+#tnavbar li a:hover{
+	color: white;
+}
+
+
+/*-------------DROPDOWN------------*/
+#dropdown-content {
+    display: none;
+    height: auto;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    
+}
+#tnavbar #dropdown-content a:hover{
+	color: black;
+	display: block;
+	background-color: rgba(255, 255, 204, 1);
+}
+
+
+li.dropdown {
+    display: inline-block;
+    border-color: 1px solid white;
+
+}
+
+
+/*-----------CONTENT-----------*/
+#content {
+	color: black !important;
+	margin: auto;
+}
+
+#content img{
+	vertical-align: middle;
+	width: 100%;
+	z-index: -10;
+
+}
+
+/*-----------GALERI----------*/
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+}
+.prev {
+	left: 0;
+}
+.next {
+    right: 0;
+    border-radius:  3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: backgroud-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: hotpink;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from { opacity: .4}
+    to {opacity: 1}
+}
+
+
+/*-----------SLIDER INDEX-----------*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active{
+    background-color: #717171;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to {opacity:1}
+}
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity:1}
+}
+
+/*-----------FOOTER-----------*/
+#footer {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+	color: white !important;
+}
+
+/*-----------STICKY-----------*/
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,1);
+}
+
+.sticky + .content{
+	padding-top: 60px;
+}
+
+
+/*-----------SLIDE-MENU-----------*/
+@keyframes slideIn {
+	from {height: 40px; opacity: 1;}
+	to {height:200px; opacity: 1;}
+}
+
+@keyframes slideOut {
+	from {height: 200px; opacity: 1;}
+	to {height:40px; opacity: 1;}
+}
+
+.slide-in{
+	animation-name: slideIn;
+	animation-duration: 1s;
+}
+
+.slide-out{
+	animation-name: slideOut;
+	animation-duration: 1s;
+}
+
+/*-----------CONTACT-----------*/
+legend{
+	width: auto;
+	font-weight: bold;
+}
+input {
+	width: 30%;
+}
+label {
+		font-weight: bold;
+}
+textarea{
+	width: 60%;
+}
+#form {
+	text-align: center;
+	width: auto;
+	margin: auto;
+}
+#tombol button {
+	margin: auto;
+	display: inline-block;
+}
+
+
+
+ 
+ 
+/*--------------UNTUK TABLET & DEKSTOP-------------*/
+@media only screen and (min-width: 600px){
+	.col-m-1{width: 8.33% !important;}
+	.col-m-2{width: 16.66% !important;}
+	.col-m-3{width: 25% !important;}
+	.col-m-4{width: 33.33% !important;}
+	.col-m-5{width: 41.66% !important;}
+	.col-m-6{width: 50% !important;}
+	.col-m-7{width: 58.33% !important;}
+	.col-m-8{width: 66.66% !important;}
+	.col-m-9{width: 75% !important;}
+	.col-m-10{width: 83.33% !important;}
+	.col-m-11{width: 91.66% !important;}
+	.col-m-12{width: 100% !important;}
+	.border{
+		border-left: 0px solid white;
+		border-right: 0px;
+	}
+	body{
+		font-size: 14px;
+	}
+	#tmenu {
+		display: flex;
+		flex-flow: row wrap;
+		overflow: inherit;
+	}
+	#tnavbar li {
+		float:left;
+	}
+	.show{
+		display: none;
+	}
+	#dropdown-content {
+	    display: none !important;
+	    width: inherit;
+	    position: absolute;
+	    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2); 
+	}
+	li.dropdown:hover #dropdown-content {
+		display: block !important;
+	}
+}
+
