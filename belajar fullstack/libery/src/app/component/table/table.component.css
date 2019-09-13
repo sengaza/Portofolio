@@ -1,0 +1,23 @@
+#th-button {
+    width: 15%;
+}
+
+#th-id {
+    width: 5%;
+}
+
+th {
+    text-align: center;
+}
+
+button {
+    margin: 2px;
+}
+td {
+    text-align: center;
+ 
+}
+
+table {
+    color: white;
+}

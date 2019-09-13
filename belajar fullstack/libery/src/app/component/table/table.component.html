@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" id="th-id">ID</th>
+      <th scope="col">Title</th>
+      <!-- <th scope="col">Price</th> -->
+      <!-- <th scope="col">Author</th> -->
+      <th scope="col">Stock</th>
+      <th scope="col" id="th-button">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let b of book">
+      <td>{{b.bookId}}</td>
+      <td>{{b.title}}</td>
+      <!-- <td>{{b.price}}</td> -->
+      <!-- <td>{{b.author}}</td> -->
+      <td>{{b.stock}}</td>
+      <td class="btn-group" role="group" aria-label="Basic example">
+        <button id="deleteBook" (click)="deleteBook(b.bookId)" class="btn btn-outline-light"><b>Delete</b></button>
+        <button class="btn btn-outline-light" (click)="openModal(b.bookId)"><b>Detail</b></button>
+      </td>
+    </tr>
+    <button class="btn btn-outline-light" (click)="getAll(book)"><b>Refresh</b></button>
+  </tbody>
+</table>

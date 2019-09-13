@@ -1,0 +1,34 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="form">
+        <div class="form-group">
+            <label for="book-id" class="col-form-label">Book Id</label>
+            <input type="text" class="form-control" formControlName="bookId">
+        </div>
+        <div class="form-group">
+            <label for="title" class="col-form-label">Title</label>
+            <input type="text" class="form-control" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label for="price" class="col-form-label">Price</label>
+            <input type="text" class="form-control" formControlName="price">
+        </div>
+        <div class="form-group">
+            <label for="stock" class="col-form-label">Author</label>
+            <input type="text" class="form-control" formControlName="author">
+        </div>
+        <div class="form-group">
+            <label for="stock" class="col-form-label">Stock</label>
+            <input type="text" class="form-control" formControlName="stock">
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-light" (click)="activeModal.close('Close click')">Close</button>
+    <button class="btn btn-outline-light" (click)="updateBook()"><b>Update</b></button>
+</div>
