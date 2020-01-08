@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkButton renders correctly 1`] = `
+<Text
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "color": "#1ea54f",
+        "height": 40,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+        "width": 112,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`LinkButton renders correctly when text is set 1`] = `
+<Text
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "color": "#1ea54f",
+        "height": 40,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+        "width": 112,
+      },
+      undefined,
+    ]
+  }
+>
+  Hello
+</Text>
+`;

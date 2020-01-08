@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup snapshot testing renders with default value 1`] = `
+<View
+  style={undefined}
+/>
+`;
+
+exports[`RadioGroup snapshot testing renders with defined value 1`] = `
+<View
+  style={undefined}
+>
+  <RadioButton
+    circleStyle={undefined}
+    containerStyle={false}
+    index={0}
+    labelStyle={undefined}
+    name="Male"
+    onSelect={[Function]}
+    selected={false}
+    value="male"
+  />
+  <RadioButton
+    circleStyle={undefined}
+    containerStyle={
+      Object {
+        "marginLeft": 0,
+      }
+    }
+    index={1}
+    labelStyle={undefined}
+    name="Female"
+    onSelect={[Function]}
+    selected={true}
+    value="female"
+  />
+</View>
+`;

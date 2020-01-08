@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Owned",
+        "id": 0
+    },
+    {
+        "name": "Rent",
+        "id": 1
+    },
+    {
+        "name": "Credit",
+        "id": 2
+    },
+    {
+        "name": "Parents",
+        "id": 3
+    },
+    {
+        "name": "Instance",
+        "id": 4
+    },
+    {
+        "name": "Others",
+        "id": 5
+    }
+]

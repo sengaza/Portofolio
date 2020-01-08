@@ -1,0 +1,18 @@
+[
+    {
+      "id": 0,
+      "name": "single"
+    },
+    {
+      "id": 1,
+      "name": "married"
+    },
+    {
+      "id": 2,
+      "name": "divorced"
+    },
+    {
+      "id": 3,
+      "name": "separated"
+    }
+  ]

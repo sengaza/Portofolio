@@ -1,0 +1,26 @@
+[
+  {
+    "name": "civilServant",
+    "id": 0
+  },
+  {
+    "name": "stateEmployee",
+    "id": 1
+  },
+  {
+    "name": "generalEmployee",
+    "id": 2
+  },
+  {
+    "name": "enterpreneur",
+    "id": 3
+  },
+  {
+    "name": "housewife",
+    "id": 4
+  },
+  {
+    "name": "Others",
+    "id": 5
+  }
+]

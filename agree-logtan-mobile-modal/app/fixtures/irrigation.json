@@ -1,0 +1,14 @@
+[
+  {
+    "name": "tidal",
+    "id": 0
+  },
+  {
+    "name": "rainfed",
+    "id": 1
+  },
+  {
+    "name": "irrigation",
+    "id": 2
+  }
+]
